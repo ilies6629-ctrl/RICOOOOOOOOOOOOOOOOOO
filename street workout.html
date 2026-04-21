@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics Command | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap');
+
+        :root {
+            --accent: #ff3e3e; 
+            --bg: #050505;
+            --surface: #111;
+        }
+
+        body {
+            background: var(--bg);
+            color: #eee;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(to top, var(--bg) 5%, transparent 95%), 
+                        url('https://images.unsplash.com/photo-1571019625479-245ed04b611e?auto=format&fit=crop&q=80&w=1400');
+            background-size: cover;
+            background-position: center 20%;
+            display: flex;
+            align-items: flex-end;
+            padding: 50px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 0.85;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: -3px;
+        }
+
+        .hero-text span { color: var(--accent); display: block; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 25px;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 60px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-left: 6px solid var(--accent);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .tech-box {
+            margin-bottom: 40px;
+            background: #0a0a0a;
+            padding: 25px;
+            border: 1px solid #222;
+            border-radius: 2px;
+        }
+
+        .tech-box h3 {
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        .tech-box p {
+            color: #ccc;
+            text-align: justify;
+        }
+
+        /* Sidebar - Equipment Cards */
+        .sidebar h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: var(--surface);
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-right: 0px solid var(--accent);
+        }
+
+        .card:hover {
+            transform: translateX(-10px);
+            border-right-width: 6px;
+            background: #1a1a1a;
+        }
+
+        .card-tag {
+            font-size: 0.65rem;
+            background: var(--accent);
+            padding: 3px 10px;
+            color: #fff;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .card-desc { font-size: 0.9rem; color: #888; }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; }
+            .hero { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>CALISTHENICS<span>COMMAND</span></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <main class="main-content">
+            <h2>Biomecanica Greutății Corporale</h2>
+            
+            <div class="tech-box">
+                <h3>01. Forța Izometrică și Controlul</h3>
+                <p>Abilitatea de a menține poziții statice (ex. Planche, Front Lever) demonstrează control neuromuscular absolut. Această forță izometrică dezvoltă stabilitatea articulară și rezistența la oboseală într-un mod unic, fără echipament extern.</p>
+                <img src="https://images.unsplash.com/photo-1549579308-2e0f2f53d2d1?auto=format&fit=crop&q=80&w=800" alt="Street Workout" style="width:100%; border-radius:2px; filter:grayscale(1) contrast(1.2); margin-top:20px; border:1px solid #333;">
+            </div>
+
+            <div class="tech-box">
+                <h3>02. Progresia Geometrică a Mișcării</h3>
+                <p>De la o flotare simplă la un "handstand push-up", fiecare mișcare avansată se bazează pe o progresie graduală a pârghiilor corpului. Înțelegerea biomecanicii permite izolarea grupelor musculare și deblocarea unor trick-uri complexe.</p>
+            </div>
+
+            <div class="tech-box">
+                <h3>03. Echilibrul Neuromuscular</h3>
+                <p>Performanța în Street Workout este o demonstrație de echilibru dinamic și static. Antrenamentul proprioceptiv optimizează comunicarea dintre sistemul nervos și mușchi, esențial pentru menținerea controlului în timpul mișcărilor fluide și al pozițiilor dificile.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h2>TRAINING SPECS</h2>
+            
+            <div class="card">
+                <span class="card-tag">Grip</span>
+                <span class="card-title">Chalk & Grips</span>
+                <span class="card-desc">Creta pentru aderență maximă și protecții pentru palmă anti-bătături.</span>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Support</span>
+                <span class="card-title">Wrist Wraps</span>
+                <span class="card-desc">Bandaje elastice pentru încheieturi, oferind stabilitate suplimentară la efort.</span>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Analytics</span>
+                <span class="card-title">Bodyweight Tracker</span>
+                <span class="card-desc">Monitorizarea progresului în exerciții, durată de izometrie și repetiții.</span>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

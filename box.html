@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic Power | Pro Sports</title>
+    <style>
+        /* CSS-ul este identic cu celelalte pagini pentru consistență */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { background: #050505; color: #fff; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; }
+        .hero { height: 65vh; background: linear-gradient(to top, #050505 5%, transparent 95%), url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1400&auto=format&fit=crop'); background-size: cover; background-position: center; display: flex; align-items: flex-end; padding-bottom: 50px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+        h1 { font-size: 5rem; text-transform: uppercase; font-weight: 900; margin: 0; letter-spacing: -4px; line-height: 0.85; text-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1 span { color: #ff3e3e; display: block; }
+        .back-link { color: #ff3e3e; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; display: inline-block; margin-bottom: 20px; transition: 0.3s; }
+        .back-link:hover { letter-spacing: 4px; color: #fff; }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; padding-bottom: 100px; }
+        .main-info h2 { font-size: 2.5rem; text-transform: uppercase; border-left: 8px solid #ff3e3e; padding-left: 20px; margin-bottom: 30px; }
+        .info-section { margin-bottom: 40px; }
+        .info-section h3 { color: #ff3e3e; text-transform: uppercase; font-size: 1.2rem; margin-bottom: 15px; }
+        .info-section p { color: #ccc; text-align: justify; }
+        .equip-column h2 { font-size: 2rem; text-transform: uppercase; margin-bottom: 30px; text-align: right; }
+        .equip-card { background: #111; padding: 25px; border-radius: 4px; margin-bottom: 20px; border-right: 4px solid #333; display: flex; gap: 20px; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .equip-card:hover { border-right-color: #ff3e3e; background: #1a1a1a; transform: translateX(-10px); }
+        .equip-img { width: 80px; height: 80px; background-size: cover; background-position: center; border-radius: 4px; filter: grayscale(100%) contrast(120%); flex-shrink: 0; }
+        .equip-details { flex-grow: 1; }
+        .equip-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .equip-title { color: #ff3e3e; font-weight: 900; text-transform: uppercase; font-size: 1.1rem; }
+        .equip-tag { font-size: 0.65rem; background: #ff3e3e; padding: 3px 10px; border-radius: 2px; color: #fff; font-weight: 700; }
+        .equip-desc { font-size: 0.95rem; color: #eee; margin-bottom: 8px; font-weight: 700; }
+        .equip-utility { font-size: 0.85rem; color: #888; line-height: 1.5; }
+        @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } h1 { font-size: 3.5rem; } .equip-column h2 { text-align: left; } .equip-card { flex-direction: column; } .equip-img { width: 100%; height: 150px; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>SWEET<span>SCIENCE</span></h1>
+        </div>
+    </section>
+    <div class="container">
+        <div class="content-grid">
+            <div class="main-info">
+                <h2>Rhythm & Impact</h2>
+                <div class="info-section">
+                    <h3>Timing-ul Neuro-Muscular</h3>
+                    <p>Boxul la Pro Sports nu este despre cât de tare lovești, ci despre momentul impactului. Antrenăm reflexele de tip "snap" – o relaxare totală urmată de o contracție musculară de milisecunde în punctul de contact.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1517438476312-10d79c67750d?q=80&w=800&auto=format&fit=crop" alt="Boxing Gloves" style="width:100%; border-radius:4px; filter:grayscale(1); margin-bottom:40px; border:1px solid #333;">
+                <div class="info-section">
+                    <h3>Pivotarea și Unghiurile</h3>
+                    <p>Fiecare pas este un atac. Ne concentrăm pe "footwork" ca bază a apărării, folosind unghiuri evazive pentru a scoate adversarul din axul de atac și a crea breșe în gardă.</p>
+                </div>
+            </div>
+            <div class="equip-column">
+                <h2>Heavy Duty Gear</h2>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1495555687398-3f50d6e79e1e?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Mănuși 16oz</div><span class="equip-tag">TRAINING</span></div>
+                        <div class="equip-desc">Piele naturală și stratificare densă.</div>
+                        <div class="equip-utility">Greutate optimă pentru condiționarea umerilor și protecție maximă în timpul antrenamentului la sac.</div>
+                    </div>
+                </div>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1552667466-d183061266e1?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Fașe Elastice</div><span class="equip-tag">SUPPORT</span></div>
+                        <div class="equip-desc">Amestec de bumbac și nylon de 4.5m.</div>
+                        <div class="equip-utility">Imobilizează încheietura și aliniază oasele mâinii pentru a preveni fracturile de stres.</div>
+                    </div>
+                </div>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1502930732308-d398104f0082?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Ghete Box</div><span class="equip-tag">AGILITY</span></div>
+                        <div class="equip-desc">Talpă subțire, profil înalt.</div>
+                        <div class="equip-utility">Tracțiune maximă pentru pivotări rapide și suport lateral pentru gleznă.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

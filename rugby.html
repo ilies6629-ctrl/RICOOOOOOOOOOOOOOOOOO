@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic Impact | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap');
+
+        :root {
+            --accent: #ff3e3e; 
+            --bg: #050505;
+            --surface: #111;
+        }
+
+        body {
+            background: var(--bg);
+            color: #eee;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(to top, var(--bg) 5%, transparent 95%), 
+                        url('https://images.unsplash.com/photo-1544919982-b61976f0ba43?auto=format&fit=crop&q=80&w=1400');
+            background-size: cover;
+            background-position: center 20%;
+            display: flex;
+            align-items: flex-end;
+            padding: 50px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 0.85;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: -3px;
+        }
+
+        .hero-text span { color: var(--accent); display: block; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 25px;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 60px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-left: 6px solid var(--accent);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .tech-box {
+            margin-bottom: 40px;
+            background: #0a0a0a;
+            padding: 25px;
+            border: 1px solid #222;
+            border-radius: 2px;
+        }
+
+        .tech-box h3 {
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        .tech-box p {
+            color: #ccc;
+            text-align: justify;
+        }
+
+        /* Sidebar - Equipment Cards */
+        .sidebar h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: var(--surface);
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-right: 0px solid var(--accent);
+        }
+
+        .card:hover {
+            transform: translateX(-10px);
+            border-right-width: 6px;
+            background: #1a1a1a;
+        }
+
+        .card-tag {
+            font-size: 0.65rem;
+            background: var(--accent);
+            padding: 3px 10px;
+            color: #fff;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .card-desc { font-size: 0.9rem; color: #888; }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; }
+            .hero { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>KINETIC<span>IMPACT</span></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <main class="main-content">
+            <h2>Fizica Coliziunii</h2>
+            
+            <div class="tech-box">
+                <h3>01. Biomecanica Grămezii (Scrum)</h3>
+                <p>Într-un scrum de nivel profesionist, forța combinată poate depăși **20,000 Newtoni**. Succesul depinde de alinierea coloanei vertebrale și de unghiul picioarelor pentru a transfera forța de împingere direct prin centrul de greutate al adversarului.</p>
+                
+            </div>
+
+            <div class="tech-box">
+                <h3>02. Disiparea Energiei în Placaj</h3>
+                <p>Un placaj executat corect maximizează suprafața de contact pentru a disipa energia cinetică. Jucătorii folosesc forța de inerție a adversarului pentru a-i schimba centrul de greutate, neutralizând atacul fără a compromite propria stabilitate.</p>
+            </div>
+
+            <div class="tech-box">
+                <h3>03. Dinamica Balistică a Balonului</h3>
+                <p>Datorită formei prolate (ovale), traiectoria balonului de rugby este imprevizibilă în aer. Loviturile tactice (box-kicks) utilizează rotația axială pentru a stabiliza zborul și a asigura o cădere verticală precisă în zona de presiune.</p>
+                
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h2>RUGBY SPECS</h2>
+            
+            <div class="card">
+                <span class="card-tag">Protection</span>
+                <span class="card-title">Shock-Absorb Vest</span>
+                <span class="card-desc">Padding de polimer inteligent care se întărește instantaneu la impact.</span>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Footwear</span>
+                <span class="card-title">Scrum Gripper Cleats</span>
+                <span class="card-desc">Crampoane metalice de 18mm pentru tracțiune maximă pe teren moale.</span>
+            </div>
+
+            <div class="card">
+                <span class="card-tag">Tech</span>
+                <span class="card-title">GPS Performance Tracker</span>
+                <span class="card-desc">Monitorizare în timp real a forței de impact (G-force) și a distanței parcurse.</span>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

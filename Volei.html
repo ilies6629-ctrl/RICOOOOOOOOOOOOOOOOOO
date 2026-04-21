@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Dynamics | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { background: #050505; color: #fff; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; }
+        .hero { height: 65vh; background: linear-gradient(to top, #050505 5%, transparent 95%), url('https://images.unsplash.com/photo-1592656670497-201110741e91?q=80&w=1400&auto=format&fit=crop'); background-size: cover; background-position: center; display: flex; align-items: flex-end; padding-bottom: 50px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+        h1 { font-size: 5rem; text-transform: uppercase; font-weight: 900; margin: 0; letter-spacing: -4px; line-height: 0.85; text-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1 span { color: #ff3e3e; display: block; }
+        .back-link { color: #ff3e3e; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; display: inline-block; margin-bottom: 20px; transition: 0.3s; }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; padding-bottom: 100px; }
+        .main-info h2 { font-size: 2.5rem; text-transform: uppercase; border-left: 8px solid #ff3e3e; padding-left: 20px; margin-bottom: 30px; }
+        .info-section h3 { color: #ff3e3e; text-transform: uppercase; font-size: 1.2rem; margin-bottom: 15px; }
+        .equip-card { background: #111; padding: 25px; border-radius: 4px; margin-bottom: 20px; border-right: 4px solid #333; display: flex; gap: 20px; transition: 0.4s; }
+        .equip-card:hover { border-right-color: #ff3e3e; transform: translateX(-10px); background: #1a1a1a; }
+        .equip-img { width: 80px; height: 80px; background-size: cover; background-position: center; border-radius: 4px; filter: grayscale(100%); flex-shrink: 0; }
+        .equip-title { color: #ff3e3e; font-weight: 900; text-transform: uppercase; }
+        .equip-tag { font-size: 0.65rem; background: #ff3e3e; padding: 3px 10px; border-radius: 2px; font-weight: 700; }
+        @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } h1 { font-size: 3.5rem; } .equip-card { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>POWER<span>SPIKE</span></h1>
+        </div>
+    </section>
+    <div class="container">
+        <div class="content-grid">
+            <div class="main-info">
+                <h2>Kinetic Summation</h2>
+                <div class="info-section">
+                    <h3>Săritura de Atac</h3>
+                    <p>Voleiul este un joc de timing și forță brută coordonată. Analizăm "penultimul pas" pentru a maximiza conversia vitezei orizontale în înălțime verticală, permițând atacantului să lovească deasupra blocajului.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1612872086822-4421f172c01d?q=80&w=800&auto=format&fit=crop" style="width:100%; border-radius:4px; filter:grayscale(1); margin-bottom:40px; border:1px solid #333;">
+                <div class="info-section">
+                    <h3>Absorbția Impactului</h3>
+                    <p>Antrenăm mecanica aterizării pentru a proteja ligamentele încrucișate. Stabilitatea genunchiului și a gleznei este fundamentală într-un sport care implică sute de sărituri pe meci.</p>
+                </div>
+            </div>
+            <div class="equip-column">
+                <h2>Gear Specs</h2>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1593787406536-36762497a3ce?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Knee Protectors</div><span class="equip-tag">DEFENSE</span></div>
+                        <div class="equip-desc">Gel cu memorie pentru absorbția șocurilor.</div>
+                        <div class="equip-utility">Design ultra-flexibil care permite plonjări fără restricții la nivelul solului.</div>
+                    </div>
+                </div>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1544117519-31a4b719223d?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Court Shoes</div><span class="equip-tag">GRIP</span></div>
+                        <div class="equip-desc">Talpă specializată pentru parchet.</div>
+                        <div class="equip-utility">Amortizare superioară în zona călcâiului pentru a reduce stresul asupra coloanei vertebrale.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

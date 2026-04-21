@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Strike | Pro Sports</title>
+    <style>
+        /* Același stil CSS pentru unitatea brandului */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { background: #050505; color: #fff; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; }
+        .hero { height: 65vh; background: linear-gradient(to top, #050505 5%, transparent 95%), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1400&auto=format&fit=crop'); background-size: cover; background-position: center; display: flex; align-items: flex-end; padding-bottom: 50px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+        h1 { font-size: 5rem; text-transform: uppercase; font-weight: 900; margin: 0; letter-spacing: -4px; line-height: 0.85; text-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1 span { color: #ff3e3e; display: block; }
+        .back-link { color: #ff3e3e; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; display: inline-block; margin-bottom: 20px; transition: 0.3s; }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; padding-bottom: 100px; }
+        .main-info h2 { font-size: 2.5rem; text-transform: uppercase; border-left: 8px solid #ff3e3e; padding-left: 20px; margin-bottom: 30px; }
+        .info-section h3 { color: #ff3e3e; text-transform: uppercase; font-size: 1.2rem; margin-bottom: 15px; }
+        .equip-card { background: #111; padding: 25px; border-radius: 4px; margin-bottom: 20px; border-right: 4px solid #333; display: flex; gap: 20px; transition: 0.4s; }
+        .equip-card:hover { border-right-color: #ff3e3e; transform: translateX(-10px); background: #1a1a1a; }
+        .equip-img { width: 80px; height: 80px; background-size: cover; background-position: center; border-radius: 4px; filter: grayscale(100%); flex-shrink: 0; }
+        .equip-title { color: #ff3e3e; font-weight: 900; text-transform: uppercase; }
+        .equip-tag { font-size: 0.65rem; background: #ff3e3e; padding: 3px 10px; border-radius: 2px; font-weight: 700; }
+        @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } h1 { font-size: 3.5rem; } .equip-card { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>TURBO<span>ENGINE</span></h1>
+        </div>
+    </section>
+    <div class="container">
+        <div class="content-grid">
+            <div class="main-info">
+                <h2>Ballistic Mechanics</h2>
+                <div class="info-section">
+                    <h3>Accelerația Liniară</h3>
+                    <p>La Pro Sports, transformăm fotbaliștii în atleți de viteză. Ne concentrăm pe forța explozivă a picioarelor și pe poziția centrului de masă pentru a obține primii trei pași decisivi în orice duel unu la unu.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=800&auto=format&fit=crop" style="width:100%; border-radius:4px; filter:grayscale(1); margin-bottom:40px; border:1px solid #333;">
+                <div class="info-section">
+                    <h3>Control Cinematic</h3>
+                    <p>Optimizăm biomecanica șutului prin rotația șoldului și stabilitatea piciorului de sprijin. Fiecare grad de rotație contează pentru a imprima mingii forța și traiectoria dorită.</p>
+                </div>
+            </div>
+            <div class="equip-column">
+                <h2>Gear Specs</h2>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Elite Cleats</div><span class="equip-tag">TRACTION</span></div>
+                        <div class="equip-desc">Configurație de crampoane pentru iarbă naturală.</div>
+                        <div class="equip-utility">Talpă din fibră de carbon pentru un transfer de energie fără pierderi la fiecare sprint.</div>
+                    </div>
+                </div>
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1614632537190-23e414d40399?q=80&w=300&auto=format&fit=crop');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header"><div class="equip-title">Pro Shin Guards</div><span class="equip-tag">ARMOR</span></div>
+                        <div class="equip-desc">Protecție ultra-ușoară din polimer.</div>
+                        <div class="equip-utility">Profil anatomic care nu interferează cu libertatea de mișcare a gleznei.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

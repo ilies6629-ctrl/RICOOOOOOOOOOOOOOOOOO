@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Lab | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            background: #050505;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 65vh;
+            /* Imagine: Focalizare pe postură și echilibru */
+            background: linear-gradient(to top, #050505 5%, transparent 95%), 
+                        url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -4px;
+            line-height: 0.85;
+        }
+
+        h1 span { color: #ff3e3e; display: block; }
+
+        .back-link {
+            color: #ff3e3e;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            letter-spacing: 4px;
+            color: #fff;
+        }
+
+        /* GRID CONTENT */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        .main-info h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-left: 8px solid #ff3e3e;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .info-section h3 {
+            color: #ff3e3e;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            color: #ccc;
+            text-align: justify;
+        }
+
+        .featured-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 4px;
+            filter: grayscale(1) contrast(1.1);
+            margin: 20px 0 40px 0;
+            border: 1px solid #333;
+        }
+
+        /* GEAR CARDS */
+        .equip-column h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .equip-card {
+            background: #111;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border-right: 4px solid #333;
+            display: flex;
+            gap: 20px;
+            transition: 0.4s;
+        }
+
+        .equip-card:hover {
+            border-right-color: #ff3e3e;
+            background: #1a1a1a;
+            transform: translateX(-10px);
+        }
+
+        .equip-thumb {
+            width: 110px;
+            height: 110px;
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(1) brightness(0.8);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .equip-details { flex-grow: 1; }
+
+        .equip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .equip-title {
+            color: #ff3e3e;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .equip-tag {
+            font-size: 0.6rem;
+            background: #ff3e3e;
+            padding: 2px 8px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .equip-desc {
+            font-size: 0.9rem;
+            color: #eee;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .equip-utility {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 3.5rem; }
+            .equip-card { flex-direction: column; }
+            .equip-thumb { width: 100%; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>YOGA<span>LAB</span></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-grid">
+            
+            <div class="main-info">
+                <h2>Structural Balance</h2>
+                
+                <div class="info-section">
+                    <h3>Mobilitate și Control Core</h3>
+                    <p>Yoga la Pro Sports nu este doar relaxare, este optimizarea corpului prin tensiune musculară controlată. Lucrăm la deschiderea lanțurilor musculare posterioare și la stabilitatea profundă a coloanei.</p>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" class="featured-img" alt="Yoga technical posture">
+
+                <div class="info-section">
+                    <h3>Recuperare Activă</h3>
+                    <p>Fiecare asana este proiectată să accelereze drenajul limfatic și să reducă inflamația după antrenamentele de mare intensitate din celelalte secțiuni ale centrului nostru.</p>
+                </div>
+            </div>
+
+            <div class="equip-column">
+                <h2>Essential Tools</h2>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">High-Grip Mat</div>
+                            <span class="equip-tag">TRACTION</span>
+                        </div>
+                        <div class="equip-desc">Suprafață densă de 5mm.</div>
+                        <div class="equip-utility">Cauciuc natural cu aderență extremă pentru a preveni alunecarea palmelor în timpul posturilor avansate de echilibru.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Yoga Blocks</div>
+                            <span class="equip-tag">SUPPORT</span>
+                        </div>
+                        <div class="equip-desc">Spumă de înaltă densitate.</div>
+                        <div class="equip-utility">Extensii ale brațelor utilizate pentru a menține aliniamentul coloanei atunci când mobilitatea este limitată.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Strap Ajustabil</div>
+                            <span class="equip-tag">FLEX</span>
+                        </div>
+                        <div class="equip-desc">Bumbac ranforsat.</div>
+                        <div class="equip-utility">Permite atingerea unor unghiuri de flexie imposibile fără ajutor, facilitând decompresia nervoasă.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

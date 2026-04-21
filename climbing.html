@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Axis | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            background: #050505;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .hero {
+            height: 65vh;
+            /* Imagine realistă cu un cățărător în acțiune - focalizare pe detalii tehnice */
+            background: linear-gradient(to top, #050505 5%, transparent 95%), 
+                        url('https://images.unsplash.com/photo-1522163182402-834f60b58e26?auto=format&fit=crop&q=80&w=1400');
+            background-size: cover;
+            background-position: center 30%;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -4px;
+            line-height: 0.85;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 span { color: #ff3e3e; display: block; }
+
+        .back-link {
+            color: #ff3e3e;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            letter-spacing: 4px;
+            color: #fff;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        .main-info h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-left: 8px solid #ff3e3e;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .info-section h3 {
+            color: #ff3e3e;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            color: #ccc;
+            text-align: justify;
+        }
+
+        /* Echipament */
+        .equip-column h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .equip-card {
+            background: #111;
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border-right: 4px solid #333;
+            display: flex;
+            gap: 20px;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .equip-card:hover {
+            border-right-color: #ff3e3e;
+            background: #1a1a1a;
+            transform: translateX(-10px);
+        }
+
+        .equip-img {
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            filter: grayscale(100%) contrast(120%);
+            flex-shrink: 0;
+        }
+
+        .equip-details { flex-grow: 1; }
+
+        .equip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .equip-title {
+            color: #ff3e3e;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+
+        .equip-tag {
+            font-size: 0.65rem;
+            background: #ff3e3e;
+            padding: 3px 10px;
+            border-radius: 2px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .equip-desc {
+            font-size: 0.95rem;
+            color: #eee;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .equip-utility {
+            font-size: 0.85rem;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 3.5rem; }
+            .equip-column h2 { text-align: left; }
+            .equip-card { flex-direction: column; }
+            .equip-img { width: 100%; height: 150px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>GRAVITY<span>DEFIER</span></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-grid">
+            
+            <div class="main-info">
+                <h2>Vertical Bio-Mechanics</h2>
+                
+                <div class="info-section">
+                    <h3>Forța de Prehensiune</h3>
+                    <p>La Pro Sports, escalada este antrenamentul suprem pentru lanțul posterior și antebrațe. Nu este vorba doar de forță brută, ci de capacitatea de a genera tensiune prin tendoane și scripeți, transformând degetele în puncte de ancorare extrem de sigure.</p>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1544033527-b192daee1f5b?auto=format&fit=crop&q=80&w=800" alt="Hands with chalk" style="width:100%; border-radius:4px; filter:grayscale(1); margin-bottom:40px; border:1px solid #333;">
+
+                <div class="info-section">
+                    <h3>Controlul Centrului de Masă</h3>
+                    <p>Fiecare ascensiune este un puzzle geometric. Învățăm cum să proiectăm centrul de greutate cât mai aproape de perete pentru a maximiza aderența și a minimiza efortul muscular.</p>
+                </div>
+            </div>
+
+            <div class="equip-column">
+                <h2>Gear Specs</h2>
+
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1564859227552-81fde4a1df0b?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Pantofi Aggressive</div>
+                            <span class="equip-tag">PRECISION</span>
+                        </div>
+                        <div class="equip-desc">Talpă curbată și cauciuc de mare fricțiune.</div>
+                        <div class="equip-utility">Design asimetric ce concentrează forța în degetul mare pentru micro-prize.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1629135061400-d3a019488421?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Ham Ultra-Light</div>
+                            <span class="equip-tag">SAFETY</span>
+                        </div>
+                        <div class="equip-desc">Distribuție egală a sarcinii.</div>
+                        <div class="equip-utility">Construcție "Split Webbing" pentru libertate totală în pașii dinamici.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-img" style="background-image: url('https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Magneziu Bloc</div>
+                            <span class="equip-tag">FRICTION</span>
+                        </div>
+                        <div class="equip-desc">Carbonat de magneziu pur.</div>
+                        <div class="equip-utility">Esențial pentru absorbția umidității și creșterea aderenței pe prize.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

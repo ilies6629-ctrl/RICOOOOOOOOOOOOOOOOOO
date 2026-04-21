@@ -1,0 +1,241 @@
+<section id="pro-sports">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+        #pro-sports {
+            background: #050505;
+            padding: 80px 20px;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .header {
+            text-align: left;
+            margin-bottom: 40px;
+            border-left: 5px solid #ff3e3e;
+            padding-left: 20px;
+        }
+
+        .header h2 { font-size: 2.5rem; text-transform: uppercase; font-weight: 800; margin: 0; }
+        .header h2 span { color: #ff3e3e; }
+
+        /* Stil pentru noul titlu deasupra sporturilor */
+        .sub-header {
+            margin-bottom: 30px;
+        }
+        .sub-header h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #bbb;
+            font-weight: 400;
+        }
+
+        .sports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .sport-card {
+            position: relative;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+            border: 1px solid #1a1a1a;
+            background: #111;
+        }
+
+        .sport-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 15%, transparent 70%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            z-index: 2;
+        }
+
+        .sport-card:hover img { transform: scale(1.1); }
+        .sport-card:hover { transform: translateY(-5px); border-color: #ff3e3e; }
+
+        .sport-card h3 { font-size: 1.6rem; margin: 0 0 8px 0; text-transform: uppercase; color: #fff; }
+        .sport-card p { font-size: 0.9rem; color: #bbb; margin-bottom: 15px; line-height: 1.4; }
+
+        .vezi-detalii {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ff3e3e;
+            align-self: flex-start;
+            padding-bottom: 3px;
+            transition: 0.3s;
+        }
+
+        .vezi-detalii:hover { color: #ff3e3e; border-color: #fff; }
+    </style>
+
+    <div class="container">
+        <div class="header">
+            <h2>Discipline <span>Disponibile</span></h2>
+        </div>
+
+        <div class="sub-header">
+            <h3>Caracteristicile sportului</h3>
+        </div>
+
+        <div class="sports-grid">
+            
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800" alt="Baschet">
+                <div class="overlay">
+                    <h3>Baschet</h3>
+                    <p>Dinamism și precizie sub coș în cel mai spectaculos sport de echipă.</p>
+                    <a href="baschet.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=800" alt="Box">
+                <div class="overlay">
+                    <h3>Box</h3>
+                    <p>Forță explozivă, reflexe și control mental în fiecare rundă.</p>
+                    <a href="box.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/674482634_4488444888056548_8995566512270055604_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=oE2r9Hoe07UQ7kNvwELlRtP&_nc_oc=AdrxSs1yZkTyPeU6S0UOLZfkt_ibY1UPQ_iWBKAscmgTUkYoeiDDmNyGvobrUvzietIGsx5d9xtVDeHtXh1OOECq&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_ss=7a32e&oh=03_Q7cD5AGsH6DkJqnetvUMAwXq_aXy0xunKQPNHQ93vef2XJHUDw&oe=6A08CD8D" alt="Ciclism">
+                <div class="overlay">
+                    <h3>Ciclism</h3>
+                    <p>Depășește-ți limitele de anduranță pe cele mai provocatoare trasee.</p>
+                    <a href="ciclism.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800" alt="Crossfit">
+                <div class="overlay">
+                    <h3>Crossfit</h3>
+                    <p>Putere, anduranță și intensitate într-un regim de antrenament variat.</p>
+                    <a href="crossfit.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=800" alt="Climbing">
+                <div class="overlay">
+                    <h3>Escaladă</h3>
+                    <p>Cucerește înălțimi noi și testează-ți limitele verticale.</p>
+                    <a href="climbing.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800" alt="Fotbal">
+                <div class="overlay">
+                    <h3>Fotbal</h3>
+                    <p>Pasiune și strategie pe gazon, unde munca de echipă aduce victoria.</p>
+                    <a href="fotbal.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=800" alt="Golf">
+                <div class="overlay">
+                    <h3>Golf</h3>
+                    <p>Relaxare și tehnică pe green, un sport al rafinamentului.</p>
+                    <a href="golf.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?q=80&w=800" alt="Swimming">
+                <div class="overlay">
+                    <h3>Înot Olimpic</h3>
+                    <p>Tehnică și control în apă pentru o dezvoltare fizică armonioasă.</p>
+                    <a href="swimming.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.pexels.com/photos/7045555/pexels-photo-7045555.jpeg?auto=compress&cs=tinysrgb&w=800" alt="MMA">
+                <div class="overlay">
+                    <h3>MMA</h3>
+                    <p>Disciplină, respect și autoapărare prin tehnici mixte de luptă.</p>
+                    <a href="mma.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/666113071_1703225447695213_8357408880346245732_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=_e5I0ts0XV4Q7kNvwELzgbT&_nc_oc=Adovxc5qiSl4XoPsxBh-APojQexU5LisCHOOA5fHcqcTgQixn8YEAGnTn4lEScwbkRVnAustoonvRak-hO5CmFmE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_ss=7a32e&oh=03_Q7cD5AEbXXtUaprak3kjcp1s7YOsLwGAS-ykc1LbQGihd5ONAA&oe=6A08B990" alt="Rugby">
+                <div class="overlay">
+                    <h3>Rugby</h3>
+                    <p>Curaj, forță fizică și spirit de echipă indestructibil pe teren.</p>
+                    <a href="rugby.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800" alt="Schi">
+                <div class="overlay">
+                    <h3>Schi Alpin</h3>
+                    <p>Viteză și tehnică pe crestele munților în sezonul rece.</p>
+                    <a href="schi.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=800" alt="Surf">
+                <div class="overlay">
+                    <h3>Surf</h3>
+                    <p>Echilibru și adrenalină pe creasta valurilor oceanului.</p>
+                    <a href="surf.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.pexels.com/photos/5739163/pexels-photo-5739163.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tenis de Câmp">
+                <div class="overlay">
+                    <h3>Tenis de Câmp</h3>
+                    <p>Agilitate și strategie pe teren, de la zgură la iarbă.</p>
+                    <a href="tennis.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=800" alt="Volei">
+                <div class="overlay">
+                    <h3>Volei</h3>
+                    <p>Energie la fileu și coordonare rapidă pentru un joc spectaculos.</p>
+                    <a href="volei.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800" alt="Yoga">
+                <div class="overlay">
+                    <h3>Yoga</h3>
+                    <p>Echilibru mental și fizic prin mișcări fluide și respirație.</p>
+                    <a href="yoga.html" class="vezi-detalii">Vezi detalii</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

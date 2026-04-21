@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Lab | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            background: #050505;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 65vh;
+            /* Imagine: Jucător de tenis în plin serviciu sau rever */
+            background: linear-gradient(to top, #050505 5%, transparent 95%), 
+                        url('https://images.unsplash.com/photo-1595435064212-c4817fb39971?auto=format&fit=crop&q=80&w=1400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -4px;
+            line-height: 0.85;
+        }
+
+        h1 span { color: #ff3e3e; display: block; }
+
+        .back-link {
+            color: #ff3e3e;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            letter-spacing: 4px;
+            color: #fff;
+        }
+
+        /* GRID CONTENT */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        .main-info h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-left: 8px solid #ff3e3e;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .info-section h3 {
+            color: #ff3e3e;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            color: #ccc;
+            text-align: justify;
+        }
+
+        .featured-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 4px;
+            filter: grayscale(1) contrast(1.1);
+            margin: 20px 0 40px 0;
+            border: 1px solid #333;
+        }
+
+        /* GEAR CARDS */
+        .equip-column h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .equip-card {
+            background: #111;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border-right: 4px solid #333;
+            display: flex;
+            gap: 20px;
+            transition: 0.4s;
+        }
+
+        .equip-card:hover {
+            border-right-color: #ff3e3e;
+            background: #1a1a1a;
+            transform: translateX(-10px);
+        }
+
+        .equip-thumb {
+            width: 110px;
+            height: 110px;
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(1) brightness(0.8);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .equip-details { flex-grow: 1; }
+
+        .equip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .equip-title {
+            color: #ff3e3e;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .equip-tag {
+            font-size: 0.6rem;
+            background: #ff3e3e;
+            padding: 2px 8px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .equip-desc {
+            font-size: 0.9rem;
+            color: #eee;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .equip-utility {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 3.5rem; }
+            .equip-card { flex-direction: column; }
+            .equip-thumb { width: 100%; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>TENNIS<span>LAB</span></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-grid">
+            
+            <div class="main-info">
+                <h2>Kinetic Power</h2>
+                
+                <div class="info-section">
+                    <h3>Precizie și Topspin</h3>
+                    <p>Fiecare lovitură este un calcul matematic de unghiuri și forță. Antrenăm transferul greutății și accelerația capului rachetei pentru a genera lovituri devastatoare și consistente.</p>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1592709823125-a191f07a2a5e?auto=format&fit=crop&q=80&w=800" class="featured-img" alt="Tennis court action">
+
+                <div class="info-section">
+                    <h3>Agilitate Laterală</h3>
+                    <p>Tenisul se joacă cu picioarele. Lucrăm la timpul de reacție și la capacitatea de a schimba direcția instantaneu, menținând un echilibru perfect în timpul impactului.</p>
+                </div>
+            </div>
+
+            <div class="equip-column">
+                <h2>Pro Gear</h2>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1617083934555-562d5440ecf9?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Rachetă Graphite</div>
+                            <span class="equip-tag">CONTROL</span>
+                        </div>
+                        <div class="equip-desc">Cadru aerodinamic de 300g.</div>
+                        <div class="equip-utility">Tehnologie de absorbție a vibrațiilor pentru protecția articulațiilor și precizie chirurgicală la fileu.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1599586120429-48281b6f0ece?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Încălțăminte Hardcourt</div>
+                            <span class="equip-tag">STABILITY</span>
+                        </div>
+                        <div class="equip-desc">Talpă non-marking cu tracțiune 360.</div>
+                        <div class="equip-utility">Suport lateral rigid pentru a preveni accidentările în timpul opririlor bruște pe suprafețe dure.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1551773188-0801da13ddaf?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Mingii de Presiune</div>
+                            <span class="equip-tag">REBOUND</span>
+                        </div>
+                        <div class="equip-desc">Nucleu de cauciuc cu densitate înaltă.</div>
+                        <div class="equip-utility">Consistență maximă a săriturii și vizibilitate crescută în condiții de lumină artificială.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossFit Lab | Pro Sports</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            background: #050505;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 65vh;
+            /* Imagine: Atlet în timpul unui exercițiu de forță (lifting/ropes) */
+            background: linear-gradient(to top, #050505 5%, transparent 95%), 
+                        url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=1400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -4px;
+            line-height: 0.85;
+        }
+
+        h1 span { color: #ff3e3e; display: block; }
+
+        .back-link {
+            color: #ff3e3e;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            letter-spacing: 4px;
+            color: #fff;
+        }
+
+        /* GRID CONTENT */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        .main-info h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-left: 8px solid #ff3e3e;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .info-section h3 {
+            color: #ff3e3e;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            color: #ccc;
+            text-align: justify;
+        }
+
+        .featured-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 4px;
+            filter: grayscale(1) contrast(1.2) brightness(0.9);
+            margin: 20px 0 40px 0;
+            border: 1px solid #333;
+        }
+
+        /* GEAR CARDS */
+        .equip-column h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .equip-card {
+            background: #111;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border-right: 4px solid #333;
+            display: flex;
+            gap: 20px;
+            transition: 0.4s;
+        }
+
+        .equip-card:hover {
+            border-right-color: #ff3e3e;
+            background: #1a1a1a;
+            transform: translateX(-10px);
+        }
+
+        .equip-thumb {
+            width: 110px;
+            height: 110px;
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(1);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .equip-details { flex-grow: 1; }
+
+        .equip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .equip-title {
+            color: #ff3e3e;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        .equip-tag {
+            font-size: 0.6rem;
+            background: #ff3e3e;
+            padding: 2px 8px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .equip-desc {
+            font-size: 0.9rem;
+            color: #eee;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .equip-utility {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 3.5rem; }
+            .equip-card { flex-direction: column; }
+            .equip-thumb { width: 100%; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html#pro-sports" class="back-link">← RESET SYSTEM</a>
+            <h1>CROSSFIT<span>LAB</span></h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-grid">
+            
+            <div class="main-info">
+                <h2>Raw Power</h2>
+                
+                <div class="info-section">
+                    <h3>Capacitate Metabolică</h3>
+                    <p>CrossFit-ul la noi înseamnă programare științifică. Combinăm ridicările olimpice cu mișcările de gimnastică pentru a construi un motor metabolic capabil să susțină orice efort.</p>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800" class="featured-img" alt="Heavy lifting CrossFit">
+
+                <div class="info-section">
+                    <h3>Forță Explozivă</h3>
+                    <p>Lucrăm la recrutarea unităților motorii și la viteza de execuție sub sarcină. Nu doar ridicăm greutăți, ci învățăm corpul să genereze putere maximă în cel mai scurt timp.</p>
+                </div>
+            </div>
+
+            <div class="equip-column">
+                <h2>WOD Arsenal</h2>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Bumper Plates</div>
+                            <span class="equip-tag">IMPACT</span>
+                        </div>
+                        <div class="equip-desc">Cauciuc reciclat de înaltă densitate.</div>
+                        <div class="equip-utility">Proiectate să reziste la mii de drop-uri, asigurând siguranța și protejarea solului în timpul ridicărilor olimpice.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1434682881908-b43d0467b798?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Kettlebells Cast Iron</div>
+                            <span class="equip-tag">FUNCTIONAL</span>
+                        </div>
+                        <div class="equip-desc">Finisaj mat pentru grip superior.</div>
+                        <div class="equip-utility">Instrumentul suprem pentru swing-uri și snatch-uri, dezvoltând forța explozivă a lanțului posterior.</div>
+                    </div>
+                </div>
+
+                <div class="equip-card">
+                    <div class="equip-thumb" style="background-image: url('https://images.unsplash.com/photo-1599058917233-57c0e88cf4f4?auto=format&fit=crop&q=80&w=300');"></div>
+                    <div class="equip-details">
+                        <div class="equip-header">
+                            <div class="equip-title">Gymnastic Rings</div>
+                            <span class="equip-tag">STABILITY</span>
+                        </div>
+                        <div class="equip-desc">Lemn de mesteacăn stratificat.</div>
+                        <div class="equip-utility">Pentru dezvoltarea controlului corporal și a forței brute în mișcările de tracțiune și împingere la înălțime.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
